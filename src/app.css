@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--sidebar-width: 260px;
+	--widget-width: 240px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* カスタムスクロールバー */
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+::-webkit-scrollbar-track {
+	@apply bg-gray-100 dark:bg-gray-800;
+}
+
+::-webkit-scrollbar-thumb {
+	@apply bg-gray-300 dark:bg-gray-600 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	@apply bg-gray-400 dark:bg-gray-500;
+}
+
+/* コードブロックのスタイル */
+pre {
+	@apply rounded-lg overflow-x-auto;
+}
+
+code {
+	@apply font-mono text-sm;
+}
+
+/* 見出しアンカーリンク */
+h2, h3, h4 {
+	scroll-margin-top: 80px;
+}
