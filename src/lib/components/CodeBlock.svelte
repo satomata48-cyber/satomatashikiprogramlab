@@ -36,34 +36,34 @@
 	}
 </script>
 
-<div class="relative group rounded-lg overflow-hidden bg-gray-900 dark:bg-gray-950 my-4">
+<div class="relative group rounded-lg overflow-hidden bg-gray-900 dark:bg-gray-950 my-3 sm:my-4 -mx-3 sm:mx-0">
 	<!-- ファイル名 -->
 	{#if filename}
-		<div class="flex items-center justify-between px-4 py-2 bg-gray-800 dark:bg-gray-900 border-b border-gray-700">
-			<span class="text-sm text-gray-400">{filename}</span>
-			<span class="text-xs text-gray-500 uppercase">{language}</span>
+		<div class="flex items-center justify-between px-3 sm:px-4 py-2 bg-gray-800 dark:bg-gray-900 border-b border-gray-700">
+			<span class="text-xs sm:text-sm text-gray-400 truncate mr-2">{filename}</span>
+			<span class="text-xs text-gray-500 uppercase flex-shrink-0">{language}</span>
 		</div>
 	{/if}
 
 	<!-- コピーボタン -->
 	<button
 		onclick={copyCode}
-		class="absolute top-2 right-2 p-2 rounded-lg bg-gray-700 hover:bg-gray-600 text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity"
+		class="absolute top-2 right-2 p-1.5 sm:p-2 rounded-lg bg-gray-700 hover:bg-gray-600 text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity z-10"
 		aria-label="コードをコピー"
 	>
 		{#if copied}
-			<svg class="w-4 h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+			<svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
 			</svg>
 		{:else}
-			<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+			<svg class="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
 			</svg>
 		{/if}
 	</button>
 
 	<!-- コード -->
-	<pre class="p-4 overflow-x-auto text-sm {filename ? '' : 'pt-10'}"><code class="language-{language}">{@html getHighlightedCode()}</code></pre>
+	<pre class="p-3 sm:p-4 overflow-x-auto text-xs sm:text-sm {filename ? '' : 'pt-8 sm:pt-10'}"><code class="language-{language}">{@html getHighlightedCode()}</code></pre>
 </div>
 
 <style>

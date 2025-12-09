@@ -1,5 +1,15 @@
 <script>
 	import { page } from '$app/stores';
+	import { afterNavigate } from '$app/navigation';
+
+	// ナビゲーション後の処理
+	afterNavigate(() => {
+		// モバイルでリンクをクリックしたらサイドバーを閉じる
+		if (window.innerWidth < 1024) {
+			const event = new CustomEvent('closeSidebar');
+			window.dispatchEvent(event);
+		}
+	});
 
 	// メニュー構造の定義
 	const menuItems = [
@@ -155,21 +165,21 @@
 	}
 </script>
 
-<nav class="p-4">
-	<ul class="space-y-1">
+<nav class="p-2 sm:p-3 md:p-4">
+	<ul class="space-y-0.5 sm:space-y-1">
 		{#each menuItems as section}
 			<li>
 				<button
 					onclick={() => toggleSection(section.title)}
-					class="w-full flex items-center justify-between px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors
+					class="w-full flex items-center justify-between px-2 sm:px-3 py-1.5 sm:py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors
 					{isSectionActive(section.items) ? 'bg-gray-100 dark:bg-gray-700' : ''}"
 				>
-					<span class="flex items-center gap-2">
-						<span class={section.color}>{section.icon}</span>
-						<span class="font-medium">{section.title}</span>
+					<span class="flex items-center gap-1.5 sm:gap-2 min-w-0">
+						<span class={`${section.color} text-lg sm:text-base flex-shrink-0`}>{section.icon}</span>
+						<span class="font-medium text-sm sm:text-base truncate">{section.title}</span>
 					</span>
 					<svg
-						class="w-4 h-4 transition-transform {expanded[section.title] ? 'rotate-180' : ''}"
+						class="w-4 h-4 transition-transform flex-shrink-0 {expanded[section.title] ? 'rotate-180' : ''}"
 						fill="none"
 						stroke="currentColor"
 						viewBox="0 0 24 24"
@@ -179,12 +189,12 @@
 				</button>
 
 				{#if expanded[section.title]}
-					<ul class="mt-1 ml-4 space-y-1">
+					<ul class="mt-0.5 sm:mt-1 ml-3 sm:ml-4 space-y-0.5 sm:space-y-1">
 						{#each section.items as item}
 							<li>
 								<a
 									href={item.href}
-									class="block px-3 py-1.5 rounded-lg text-sm transition-colors
+									class="block px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg text-xs sm:text-sm transition-colors
 									{isActive(item.href)
 										? 'bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 font-medium'
 										: 'text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700'}"

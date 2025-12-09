@@ -44,50 +44,50 @@
 	}
 </script>
 
-<div class="my-6 rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden bg-white dark:bg-gray-800">
+<div class="my-4 sm:my-6 rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden bg-white dark:bg-gray-800 -mx-3 sm:mx-0">
 	<!-- ヘッダー -->
 	{#if title}
-		<div class="px-4 py-3 border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900">
-			<h3 class="font-semibold text-gray-900 dark:text-white">{title}</h3>
+		<div class="px-3 sm:px-4 py-2 sm:py-3 border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900">
+			<h3 class="font-semibold text-sm sm:text-base text-gray-900 dark:text-white">{title}</h3>
 			{#if description}
-				<p class="text-sm text-gray-600 dark:text-gray-400 mt-1">{description}</p>
+				<p class="text-xs sm:text-sm text-gray-600 dark:text-gray-400 mt-1">{description}</p>
 			{/if}
 		</div>
 	{/if}
 
 	<!-- previewHtmlがある場合は2カラム、ない場合は1カラム -->
 	{#if previewHtml}
-		<div class="grid grid-cols-1 lg:grid-cols-2">
+		<div class="flex flex-col md:grid md:grid-cols-2">
 			<!-- コード部分 -->
-			<div class="relative border-b lg:border-b-0 lg:border-r border-gray-200 dark:border-gray-700">
-				<div class="flex items-center justify-between px-3 py-2 bg-gray-100 dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700">
+			<div class="relative border-b md:border-b-0 md:border-r border-gray-200 dark:border-gray-700 order-2 md:order-1">
+				<div class="flex items-center justify-between px-2 sm:px-3 py-2 bg-gray-100 dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700">
 					<span class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase">{language}</span>
 					<button
 						onclick={copyCode}
-						class="p-1.5 rounded hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-500 dark:text-gray-400 transition-colors"
+						class="p-1.5 rounded hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-500 dark:text-gray-400 transition-colors flex-shrink-0"
 						aria-label="コピー"
 					>
 						{#if copied}
-							<svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
 							</svg>
 						{:else}
-							<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<svg class="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
 							</svg>
 						{/if}
 					</button>
 				</div>
-				<pre class="p-4 overflow-x-auto text-sm bg-gray-900 dark:bg-gray-950 max-h-80"><code class="language-{language} font-mono">{@html getHighlightedCode()}</code></pre>
+				<pre class="p-3 sm:p-4 overflow-x-auto text-xs sm:text-sm bg-gray-900 dark:bg-gray-950 max-h-64 sm:max-h-80"><code class="language-{language} font-mono">{@html getHighlightedCode()}</code></pre>
 			</div>
 
 			<!-- プレビュー部分 -->
-			<div class="flex flex-col">
-				<div class="flex items-center gap-2 px-3 py-2 bg-gray-100 dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700">
+			<div class="flex flex-col order-1 md:order-2">
+				<div class="flex items-center gap-2 px-2 sm:px-3 py-2 bg-gray-100 dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700">
 					<span class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase">プレビュー</span>
 				</div>
-				<div class="flex-1 p-4 bg-white dark:bg-gray-800 min-h-32">
-					<div class="preview-container">
+				<div class="flex-1 p-3 sm:p-4 bg-white dark:bg-gray-800 min-h-24 sm:min-h-32">
+					<div class="preview-container overflow-x-auto">
 						{@html previewHtml}
 					</div>
 				</div>
@@ -96,25 +96,25 @@
 	{:else}
 		<!-- previewHtmlがない場合はコードのみ表示 -->
 		<div class="relative">
-			<div class="flex items-center justify-between px-3 py-2 bg-gray-100 dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700">
+			<div class="flex items-center justify-between px-2 sm:px-3 py-2 bg-gray-100 dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700">
 				<span class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase">{language}</span>
 				<button
 					onclick={copyCode}
-					class="p-1.5 rounded hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-500 dark:text-gray-400 transition-colors"
+					class="p-1.5 rounded hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-500 dark:text-gray-400 transition-colors flex-shrink-0"
 					aria-label="コピー"
 				>
 					{#if copied}
-						<svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
 						</svg>
 					{:else}
-						<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<svg class="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
 						</svg>
 					{/if}
 				</button>
 			</div>
-			<pre class="p-4 overflow-x-auto text-sm bg-gray-900 dark:bg-gray-950 max-h-96"><code class="language-{language} font-mono">{@html getHighlightedCode()}</code></pre>
+			<pre class="p-3 sm:p-4 overflow-x-auto text-xs sm:text-sm bg-gray-900 dark:bg-gray-950 max-h-80 sm:max-h-96"><code class="language-{language} font-mono">{@html getHighlightedCode()}</code></pre>
 		</div>
 	{/if}
 </div>

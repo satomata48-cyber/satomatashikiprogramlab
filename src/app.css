@@ -42,3 +42,41 @@ code {
 h2, h3, h4 {
 	scroll-margin-top: 80px;
 }
+
+/* 記事内の見出しサイズをレスポンシブに */
+article h1 {
+	@apply text-2xl sm:text-3xl;
+}
+
+article h2 {
+	@apply text-lg sm:text-xl;
+}
+
+article h3 {
+	@apply text-base sm:text-lg;
+}
+
+/* 記事内のpタグ */
+article p {
+	@apply text-sm sm:text-base;
+}
+
+/* グリッドの最小幅を保証 */
+.grid {
+	width: 100%;
+	min-width: 0;
+}
+
+/* ナビゲーションボタンのレスポンシブ */
+article .flex.justify-between a {
+	@apply text-sm sm:text-base px-3 sm:px-4 py-2;
+}
+
+/* 記事内の情報ボックス */
+article section > div[class*="p-"] {
+	@apply text-sm sm:text-base;
+}
+
+article section > div[class*="p-"] code {
+	@apply text-xs sm:text-sm;
+}
