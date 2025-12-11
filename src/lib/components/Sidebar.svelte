@@ -138,6 +138,17 @@
 			]
 		},
 		{
+			title: 'Linux',
+			icon: '🐧',
+			color: 'text-amber-600',
+			items: [
+				{ title: 'フォルダ構成', href: '/linux/folder-structure' },
+				{ title: 'Windowsからの移行', href: '/linux/switch-from-windows' },
+				{ title: '2025年人気のOS', href: '/linux/popular-2025' },
+				{ title: 'リブランディング', href: '/linux/rebranding' }
+			]
+		},
+		{
 			title: '開発方法',
 			icon: '🛠️',
 			color: 'text-gray-600 dark:text-gray-400',
