@@ -149,6 +149,16 @@
 			]
 		},
 		{
+			title: 'ブラウザ',
+			icon: '🌍',
+			color: 'text-blue-500',
+			items: [
+				{ title: 'フォルダ構成', href: '/browser/folder-structure' },
+				{ title: '人気オープンソース', href: '/browser/popular-opensource' },
+				{ title: 'リブランディング', href: '/browser/rebranding' }
+			]
+		},
+		{
 			title: '開発方法',
 			icon: '🛠️',
 			color: 'text-gray-600 dark:text-gray-400',

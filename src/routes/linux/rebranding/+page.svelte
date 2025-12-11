@@ -40,6 +40,310 @@
 		</div>
 	</section>
 
+	<!-- 成功例 -->
+	<section class="mb-10">
+		<h2 id="success-stories" class="text-xl font-bold mb-4">リブランディング成功例</h2>
+
+		<p class="text-gray-700 dark:text-gray-300 mb-6">
+			実際に世界中で使われている人気ディストロの多くは、UbuntuやDebianをベースにリブランディングして生まれました。
+			彼らが<strong>何を変えて成功したか</strong>を学びましょう。
+		</p>
+
+		<!-- Linux Mint -->
+		<div class="p-5 rounded-lg border-2 border-green-400 dark:border-green-600 bg-green-50 dark:bg-green-900/20 mb-6">
+			<div class="flex items-center gap-3 mb-3">
+				<span class="text-3xl">🌿</span>
+				<div>
+					<h3 class="font-bold text-lg">Linux Mint</h3>
+					<span class="text-xs bg-green-500 text-white px-2 py-0.5 rounded">最も成功したUbuntu派生</span>
+				</div>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+				<div>
+					<p class="text-sm text-gray-700 dark:text-gray-300 mb-3">
+						<strong>2006年</strong>にClement Lefebvre氏がフランスで開発開始。「Windowsユーザーが違和感なく使える」をコンセプトに、2011年からDistroWatchで常にトップクラスの人気を維持。
+					</p>
+					<p class="text-sm text-gray-700 dark:text-gray-300">
+						GNOME 3への移行を拒否し、<strong>MATE</strong>（GNOME 2のフォーク）と独自の<strong>Cinnamon</strong>デスクトップを開発。これが差別化の決め手に。
+					</p>
+				</div>
+				<div class="p-3 bg-white dark:bg-gray-800 rounded">
+					<p class="font-medium text-green-700 dark:text-green-300 mb-2 text-sm">カスタマイズ内容</p>
+					<ul class="text-xs text-gray-600 dark:text-gray-400 space-y-1">
+						<li>✅ 独自デスクトップ環境（Cinnamon）</li>
+						<li>✅ マルチメディアコーデック同梱</li>
+						<li>✅ 独自のソフトウェアマネージャー</li>
+						<li>✅ Windowsライクなメニュー配置</li>
+						<li>✅ 独自のシステム設定ツール</li>
+						<li>✅ アップデートマネージャーの改良</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="p-3 bg-green-100 dark:bg-green-900/40 rounded text-sm">
+				<p class="font-medium text-green-800 dark:text-green-200">成功の秘訣</p>
+				<p class="text-green-700 dark:text-green-300 text-xs mt-1">
+					「新しいものを追求」せず「使いやすさ」を最優先。Windowsユーザーが慣れ親しんだUIを維持し、
+					箱から出してすぐ使える（コーデック・ドライバ同梱）ことで初心者の支持を獲得。
+				</p>
+			</div>
+		</div>
+
+		<!-- Zorin OS -->
+		<div class="p-5 rounded-lg border border-blue-300 dark:border-blue-700 bg-blue-50 dark:bg-blue-900/20 mb-6">
+			<div class="flex items-center gap-3 mb-3">
+				<span class="text-3xl">💎</span>
+				<div>
+					<h3 class="font-bold text-lg">Zorin OS</h3>
+					<span class="text-xs bg-blue-500 text-white px-2 py-0.5 rounded">Windows/macOS移行特化</span>
+				</div>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+				<div>
+					<p class="text-sm text-gray-700 dark:text-gray-300 mb-3">
+						アイルランドで開発。他のディストロにない<strong>「Zorin Appearance」</strong>ツールで、
+						Windows 11風、macOS風、Ubuntu Unity風など<strong>8種類のレイアウト</strong>を1クリックで切替可能。
+					</p>
+					<p class="text-sm text-gray-700 dark:text-gray-300">
+						無料のCore版と有料のPro版を提供。Pro版には追加レイアウトやプレミアムアプリが含まれる。
+					</p>
+				</div>
+				<div class="p-3 bg-white dark:bg-gray-800 rounded">
+					<p class="font-medium text-blue-700 dark:text-blue-300 mb-2 text-sm">カスタマイズ内容</p>
+					<ul class="text-xs text-gray-600 dark:text-gray-400 space-y-1">
+						<li>✅ Zorin Appearance（UIレイアウト切替）</li>
+						<li>✅ Windows/macOS風テーマ</li>
+						<li>✅ Zorin Connect（スマホ連携）</li>
+						<li>✅ Wine/PlayOnLinux統合</li>
+						<li>✅ 美しいアイコン・壁紙セット</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="p-3 bg-blue-100 dark:bg-blue-900/40 rounded text-sm">
+				<p class="font-medium text-blue-800 dark:text-blue-200">成功の秘訣</p>
+				<p class="text-blue-700 dark:text-blue-300 text-xs mt-1">
+					「見た目で選ぶ」ユーザー心理を理解。OSを切り替えてもUIの学習コストがほぼゼロになる設計。
+					Pro版の収益モデルで持続可能な開発を実現。
+				</p>
+			</div>
+		</div>
+
+		<!-- Pop!_OS -->
+		<div class="p-5 rounded-lg border border-cyan-300 dark:border-cyan-700 bg-cyan-50 dark:bg-cyan-900/20 mb-6">
+			<div class="flex items-center gap-3 mb-3">
+				<span class="text-3xl">🚀</span>
+				<div>
+					<h3 class="font-bold text-lg">Pop!_OS</h3>
+					<span class="text-xs bg-cyan-500 text-white px-2 py-0.5 rounded">開発者・ゲーマー向け</span>
+				</div>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+				<div>
+					<p class="text-sm text-gray-700 dark:text-gray-300 mb-3">
+						<strong>System76</strong>（Linuxハードウェアメーカー）が開発。自社PCに最適化したOSを提供するため、
+						Ubuntuをベースに独自の改良を重ねる。
+					</p>
+					<p class="text-sm text-gray-700 dark:text-gray-300">
+						<strong>NVIDIA ISO</strong>（ドライバ同梱版）を提供し、Linuxでのゲーミング・GPU作業の敷居を大幅に下げた。
+					</p>
+				</div>
+				<div class="p-3 bg-white dark:bg-gray-800 rounded">
+					<p class="font-medium text-cyan-700 dark:text-cyan-300 mb-2 text-sm">カスタマイズ内容</p>
+					<ul class="text-xs text-gray-600 dark:text-gray-400 space-y-1">
+						<li>✅ Pop Shell（タイル型ウィンドウ管理）</li>
+						<li>✅ NVIDIA/AMD ISO版</li>
+						<li>✅ 独自のリカバリーパーティション</li>
+						<li>✅ Pop!_Shop（アプリストア）</li>
+						<li>✅ フラットパック統合</li>
+						<li>✅ 自動グラフィック切替</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="p-3 bg-cyan-100 dark:bg-cyan-900/40 rounded text-sm">
+				<p class="font-medium text-cyan-800 dark:text-cyan-200">成功の秘訣</p>
+				<p class="text-cyan-700 dark:text-cyan-300 text-xs mt-1">
+					「開発者・クリエイターの生産性」に特化。Pop Shellのタイル配置はi3/Swayユーザーを取り込み、
+					NVIDIA対応でゲーマー・機械学習エンジニアを獲得。
+				</p>
+			</div>
+		</div>
+
+		<!-- Elementary OS -->
+		<div class="p-5 rounded-lg border border-purple-300 dark:border-purple-700 bg-purple-50 dark:bg-purple-900/20 mb-6">
+			<div class="flex items-center gap-3 mb-3">
+				<span class="text-3xl">🍎</span>
+				<div>
+					<h3 class="font-bold text-lg">Elementary OS</h3>
+					<span class="text-xs bg-purple-500 text-white px-2 py-0.5 rounded">macOS風デザイン</span>
+				</div>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+				<div>
+					<p class="text-sm text-gray-700 dark:text-gray-300 mb-3">
+						macOSに似た<strong>ミニマルで美しいUI</strong>が特徴。独自のデスクトップ環境<strong>Pantheon</strong>と
+						<strong>AppCenter</strong>を開発。
+					</p>
+					<p class="text-sm text-gray-700 dark:text-gray-300">
+						「Pay What You Want」モデルを採用し、ダウンロード時に任意の金額を支払う仕組みを導入。
+					</p>
+				</div>
+				<div class="p-3 bg-white dark:bg-gray-800 rounded">
+					<p class="font-medium text-purple-700 dark:text-purple-300 mb-2 text-sm">カスタマイズ内容</p>
+					<ul class="text-xs text-gray-600 dark:text-gray-400 space-y-1">
+						<li>✅ Pantheonデスクトップ（独自開発）</li>
+						<li>✅ macOS風ドック（Plank）</li>
+						<li>✅ 最小化ボタンを廃止した独自UI思想</li>
+						<li>✅ AppCenter（厳選アプリストア）</li>
+						<li>✅ GTK4ベースのモダンアプリ群</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="p-3 bg-purple-100 dark:bg-purple-900/40 rounded text-sm">
+				<p class="font-medium text-purple-800 dark:text-purple-200">成功の秘訣</p>
+				<p class="text-purple-700 dark:text-purple-300 text-xs mt-1">
+					「Less is More」を徹底したUX設計。機能を削ぎ落とすことで初心者でも迷わない。
+					デザイナー・クリエイター層に強くアピール。
+				</p>
+			</div>
+		</div>
+
+		<!-- MX Linux -->
+		<div class="p-5 rounded-lg border border-amber-300 dark:border-amber-700 bg-amber-50 dark:bg-amber-900/20 mb-6">
+			<div class="flex items-center gap-3 mb-3">
+				<span class="text-3xl">🔷</span>
+				<div>
+					<h3 class="font-bold text-lg">MX Linux</h3>
+					<span class="text-xs bg-amber-500 text-white px-2 py-0.5 rounded">コミュニティ協力の成功例</span>
+				</div>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+				<div>
+					<p class="text-sm text-gray-700 dark:text-gray-300 mb-3">
+						<strong>2013年</strong>、開発終了したMEPISの後継として、MEPISコミュニティと<strong>antiX</strong>チームが協力して開発。
+						antiXのISOビルドシステムとLive USB技術を継承。
+					</p>
+					<p class="text-sm text-gray-700 dark:text-gray-300">
+						2020年代にDistroWatch 1位を獲得。軽量でありながら機能豊富な「中道路線」が支持される。
+					</p>
+				</div>
+				<div class="p-3 bg-white dark:bg-gray-800 rounded">
+					<p class="font-medium text-amber-700 dark:text-amber-300 mb-2 text-sm">カスタマイズ内容</p>
+					<ul class="text-xs text-gray-600 dark:text-gray-400 space-y-1">
+						<li>✅ MX Tools（独自管理ツール群）</li>
+						<li>✅ MX Snapshot（ISO作成ツール）</li>
+						<li>✅ MX Package Installer</li>
+						<li>✅ systemd非依存オプション</li>
+						<li>✅ Xfce/KDE/Fluxbox版提供</li>
+						<li>✅ 独自リポジトリ</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="p-3 bg-amber-100 dark:bg-amber-900/40 rounded text-sm">
+				<p class="font-medium text-amber-800 dark:text-amber-200">成功の秘訣</p>
+				<p class="text-amber-700 dark:text-amber-300 text-xs mt-1">
+					2つのコミュニティ（MEPIS + antiX）の技術を統合。「MX Tools」という強力な独自ツール群で
+					他と差別化。古いPCでも快適に動作する軽量性を維持。
+				</p>
+			</div>
+		</div>
+
+		<!-- 統計・人気度 -->
+		<div class="p-4 rounded-lg bg-gray-50 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 mb-6">
+			<p class="font-semibold text-gray-800 dark:text-gray-200 mb-3">DistroWatch 2025年ランキング（参考）</p>
+			<div class="overflow-x-auto">
+				<table class="w-full text-sm">
+					<thead>
+						<tr class="border-b border-gray-200 dark:border-gray-700">
+							<th class="text-left py-2 px-3">順位</th>
+							<th class="text-left py-2 px-3">ディストロ</th>
+							<th class="text-left py-2 px-3">ベース</th>
+							<th class="text-left py-2 px-3">特徴</th>
+						</tr>
+					</thead>
+					<tbody class="text-xs">
+						<tr class="border-b border-gray-200 dark:border-gray-700">
+							<td class="py-2 px-3 font-bold text-amber-500">1</td>
+							<td class="py-2 px-3">MX Linux</td>
+							<td class="py-2 px-3 text-gray-500">Debian</td>
+							<td class="py-2 px-3">軽量＋独自ツール</td>
+						</tr>
+						<tr class="border-b border-gray-200 dark:border-gray-700">
+							<td class="py-2 px-3 font-bold text-gray-400">2</td>
+							<td class="py-2 px-3">EndeavourOS</td>
+							<td class="py-2 px-3 text-gray-500">Arch</td>
+							<td class="py-2 px-3">Arch簡単導入</td>
+						</tr>
+						<tr class="border-b border-gray-200 dark:border-gray-700">
+							<td class="py-2 px-3 font-bold text-amber-700">3</td>
+							<td class="py-2 px-3">Linux Mint</td>
+							<td class="py-2 px-3 text-gray-500">Ubuntu</td>
+							<td class="py-2 px-3">初心者向けNo.1</td>
+						</tr>
+						<tr class="border-b border-gray-200 dark:border-gray-700">
+							<td class="py-2 px-3">5</td>
+							<td class="py-2 px-3">Pop!_OS</td>
+							<td class="py-2 px-3 text-gray-500">Ubuntu</td>
+							<td class="py-2 px-3">開発者・ゲーマー</td>
+						</tr>
+						<tr>
+							<td class="py-2 px-3">7</td>
+							<td class="py-2 px-3">Ubuntu</td>
+							<td class="py-2 px-3 text-gray-500">Debian</td>
+							<td class="py-2 px-3">最も有名</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<p class="text-xs text-gray-500 mt-2">
+				※DistroWatchのPage Hit Rankingは関心度の指標であり、実際のシェアとは異なります
+			</p>
+		</div>
+
+		<!-- 成功のポイントまとめ -->
+		<div class="p-4 rounded-lg bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800">
+			<p class="font-semibold text-green-800 dark:text-green-200 mb-3">リブランディング成功のポイント</p>
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-green-700 dark:text-green-300">
+				<div class="flex items-start gap-2">
+					<span class="text-green-500 mt-0.5">✓</span>
+					<div>
+						<p class="font-medium">明確なターゲット</p>
+						<p class="text-xs text-gray-500">Windows移行者、開発者、軽量PCなど具体的</p>
+					</div>
+				</div>
+				<div class="flex items-start gap-2">
+					<span class="text-green-500 mt-0.5">✓</span>
+					<div>
+						<p class="font-medium">独自の価値を提供</p>
+						<p class="text-xs text-gray-500">独自ツール、独自デスクトップ、独自テーマ</p>
+					</div>
+				</div>
+				<div class="flex items-start gap-2">
+					<span class="text-green-500 mt-0.5">✓</span>
+					<div>
+						<p class="font-medium">箱から出してすぐ使える</p>
+						<p class="text-xs text-gray-500">コーデック、ドライバ、日本語環境の同梱</p>
+					</div>
+				</div>
+				<div class="flex items-start gap-2">
+					<span class="text-green-500 mt-0.5">✓</span>
+					<div>
+						<p class="font-medium">継続的な開発体制</p>
+						<p class="text-xs text-gray-500">コミュニティ or 企業による持続可能な運営</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<!-- ツール比較 -->
 	<section class="mb-10">
 		<h2 id="tools" class="text-xl font-bold mb-4">リブランディングツール比較</h2>
