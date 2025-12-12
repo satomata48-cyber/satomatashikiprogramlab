@@ -912,6 +912,11 @@ BUG_REPORT_URL="https://mylinux.example.com/bugs"`}
 			</svg>
 			前へ：2025年人気のOS
 		</a>
-		<span></span>
+		<a href="/linux/custom-os" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+			次へ：カスタムOS構築
+			<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+			</svg>
+		</a>
 	</div>
 </article>
